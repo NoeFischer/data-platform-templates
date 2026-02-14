@@ -1,0 +1,11 @@
+Message ID,Phase,Audience,Message / Topic,Purpose,Channel,Frequency,Sender / From,Timing,Owner,Status,Notes
+CM-001,Discovery,All stakeholders,Project announcement and vision,"Awareness: explain why the project is happening and what it means for them",Email + town hall,Once,Sponsor,,,"Not Started","Keep it short; focus on the 'why' not technical details"
+CM-002,Discovery,Affected teams,Impact overview and timeline,"Understanding: what will change for them and when",Team meeting,Once,Project lead,,,"Not Started","Use the impact assessment to tailor by group"
+CM-003,Planning,Steering committee,Roadmap and key decisions,"Alignment: get buy-in on approach and phasing",Steering meeting,Once,Project lead,,,"Not Started",
+CM-004,Build,All stakeholders,Status update,"Awareness: keep everyone informed of progress",Email newsletter,Biweekly,Project lead,,,"Not Started","Use the status report template"
+CM-005,Build,Champion network,Early preview and feedback,Engagement: involve champions before wider rollout,Workshop / demo,Monthly,Product owner,,,"Not Started","Champions become your ambassadors"
+CM-006,Migration,Affected teams,What's changing and when,Preparation: specific details about the cutover,Email + team meeting,2 weeks before cutover,Project lead,,,"Not Started","Include a FAQ section"
+CM-007,Migration,Affected teams,Training schedule and materials,Enablement: equip people with skills,Email + calendar invites,1 week before training,Training lead,,,"Not Started",
+CM-008,Adoption,All users,Go-live announcement,Action: the new platform is live; here's how to get started,Email + Slack + intranet,Once,Sponsor,,,"Not Started","Include links to training materials and support channels"
+CM-009,Adoption,All users,Tips and success stories,Reinforcement: show value and encourage adoption,Slack / newsletter,Weekly for first month,Product owner,,,"Not Started","Feature real user stories"
+CM-010,Adoption,Management,Adoption metrics and feedback summary,Accountability: show progress and surface issues,Report / meeting,Monthly,Project lead,,,"Not Started","Use the adoption tracker data"

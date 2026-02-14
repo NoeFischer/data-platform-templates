@@ -1,0 +1,17 @@
+Activity,Sponsor,Project Lead,Technical Lead,Data Engineer,Data Steward,Business Analyst,End User Representative,Notes
+Define project scope and objectives,A,R,C,I,C,C,C,Charter approval required
+Approve budget and resources,R,A,C,I,I,I,I,
+Platform architecture design,I,A,R,C,C,C,I,ADR should be created
+Data source identification and mapping,I,A,C,R,C,R,C,
+Data modeling,I,C,A,R,C,R,I,
+Pipeline development,I,I,A,R,I,C,I,
+Data quality rules definition,I,C,C,R,A,R,C,
+Security and access control setup,A,C,R,C,R,I,I,
+Testing and validation,I,A,C,R,C,R,R,
+Migration planning and execution,I,A,R,R,C,C,I,
+Training material creation,I,A,C,C,C,R,C,
+User training delivery,I,R,C,I,C,R,A,
+Go-live decision,R,A,C,C,C,I,I,
+Post-launch support model,A,R,C,R,C,I,C,
+Ongoing data governance,I,C,I,C,R,C,I,
+Legend: R = Responsible (does the work) / A = Accountable (owns the outcome) / C = Consulted / I = Informed,,,,,,,,

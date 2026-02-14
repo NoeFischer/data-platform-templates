@@ -1,0 +1,13 @@
+Milestone ID,Phase,Milestone,Description,Planned Date,Actual Date,Owner,Status,Dependencies,Notes
+M-001,Discovery,Discovery complete,Current state assessed; requirements documented and signed off,,,,Not Started,,
+M-002,Discovery,Data source inventory finalized,All in-scope sources identified; access confirmed,,,,Not Started,M-001,
+M-003,Design,Architecture approved,Platform architecture reviewed and approved via ADR,,,,Not Started,M-001,
+M-004,Design,Data model v1 signed off,Core data model reviewed by business and technical stakeholders,,,,Not Started,M-002,
+M-005,Build,Dev environment ready,Platform provisioned; CI/CD configured; team has access,,,,Not Started,M-003,
+M-006,Build,First pipeline in production,End-to-end pipeline for one source running and validated,,,,Not Started,"M-004,M-005",
+M-007,Build,All pipelines complete,All in-scope data sources ingested and transformed,,,,Not Started,M-006,
+M-008,Migration,Migration dry run complete,Full migration rehearsal executed; issues documented,,,,Not Started,M-007,
+M-009,Migration,Production cutover,Live migration executed; data validated; old system decommission planned,,,,Not Started,M-008,
+M-010,Adoption,Training delivered,All user groups trained; materials handed over,,,,Not Started,M-007,
+M-011,Adoption,Adoption targets met,Platform usage meets success criteria defined in charter,,,,Not Started,"M-009,M-010",
+M-012,Closeout,Project closed,Handover complete; lessons learned documented; retro done,,,,Not Started,M-011,

@@ -1,0 +1,13 @@
+Item ID,Title,Description,Requested By,Category,Business Value (1-5),Effort (1-5),Risk if Deferred (1-5),Priority Score,Phase,Status,Notes
+BP-001,Example: Ingest CRM data,Connect Salesforce and load accounts + opportunities into the platform,,Data Ingestion,5,3,4,6,Phase 1,To Do,Priority score = Business Value + Risk if Deferred - Effort
+BP-002,Example: Build revenue dashboard,Executive dashboard showing monthly revenue by product and region,,Analytics,5,2,3,6,Phase 1,To Do,
+BP-003,Example: Implement data quality checks,Automated null/freshness/uniqueness checks on critical tables,,Data Quality,4,3,5,6,Phase 2,To Do,
+BP-004,,,,,,,,,,,
+BP-005,,,,,,,,,,,
+BP-006,,,,,,,,,,,
+BP-007,,,,,,,,,,,
+BP-008,,,,,,,,,,,
+Scoring guide:,,,,,,,,,,,"Business Value (1-5): How much business impact does this deliver?"
+,,,,,,,,,,,"Effort (1-5): How much work is required? (5 = most effort)"
+,,,,,,,,,,,"Risk if Deferred (1-5): What happens if we don't do this now?"
+,,,,,,,,,,,"Priority Score = Business Value + Risk if Deferred - Effort"

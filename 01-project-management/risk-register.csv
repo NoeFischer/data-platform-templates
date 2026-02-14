@@ -1,0 +1,9 @@
+Risk ID,Date Identified,Category,Risk Description,Likelihood (1-5),Impact (1-5),Risk Score,Risk Owner,Mitigation Strategy,Contingency Plan,Status,Last Updated
+R-001,,Technical,Data quality in source systems is poor and undocumented,4,4,16,,Profile all sources during discovery; define quality thresholds before build,Implement quarantine pattern for bad data; alert and skip rather than fail,Open,
+R-002,,Organizational,Key stakeholders are not aligned on platform requirements,3,5,15,,Run alignment workshop early; get written sign-off on requirements,Escalate to sponsor; descope to areas of agreement,Open,
+R-003,,Resource,Client SMEs are not available when needed for requirements and validation,4,4,16,,Agree on SME availability in charter; schedule sessions 2 weeks ahead,Document assumptions; validate incrementally rather than in big batches,Open,
+R-004,,Technical,Migration of legacy data is more complex than estimated,3,4,12,,Run a proof-of-concept migration for the most complex source first,Phase migration; defer low-priority historical data,Open,
+R-005,,Adoption,End users resist switching from existing tools and processes,3,5,15,,Start change management in week 1; involve champions early,Run old and new in parallel; provide hands-on support during transition,Open,
+R-006,,Vendor,Platform vendor pricing or licensing changes during project,2,4,8,,Lock in pricing before project start; review contract terms,Identify alternative platforms; design for portability,Open,
+R-007,,Scope,Scope creep from additional data sources or use cases,4,3,12,,Maintain a strict change request process; track all scope additions,Defer new scope to a follow-up phase,Open,
+R-008,,Security,Sensitive data is exposed due to inadequate access controls,2,5,10,,Define access model in design phase; review with security team,Implement emergency access revocation process,Open,
