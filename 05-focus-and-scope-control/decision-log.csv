@@ -1,0 +1,11 @@
+Decision ID,Date,Decision,Context / Why,Options Considered,Decided By,Stakeholders Consulted,Revisit Date,Status,Outcome / Notes
+D-001,,Example: Defer real-time ingestion to Phase 2,"Client requested real-time for 2 sources, but the business case is weak and it adds 3 weeks to Phase 1","(A) Build real-time in Phase 1, (B) Defer to Phase 2, (C) Build a near-real-time compromise",Project lead + sponsor,"Analytics lead, data engineer",,Final,"Avoided 3 weeks of complexity; revisiting in Phase 2 planning"
+D-002,,Example: Use dbt for transformation layer,"Need a standard transformation framework; team has SQL skills, limited Python","(A) dbt, (B) Custom Python scripts, (C) Platform-native stored procedures",Technical lead,"Data engineers, analytics lead",,Final,
+D-003,,Example: Cap Phase 1 at 5 data sources,Risk of overloading the team; better to deliver 5 well than 12 poorly,"(A) All 12 sources, (B) 5 highest-value sources, (C) 8 sources with reduced quality checks",Product owner + sponsor,All stakeholders,,Final,"Sources 6-12 moved to Phase 2 backlog"
+D-004,,,,,,,,,,
+D-005,,,,,,,,,,
+D-006,,,,,,,,,,
+D-007,,,,,,,,,,
+D-008,,,,,,,,,,
+Status options:,"Proposed, Final, Revisited, Reversed",,,,,,,,
+Usage note:,"Log every significant decision here — especially ones made verbally in meetings. If it's not written down, it didn't happen. When someone asks 'why did we do X?', point them here.",,,,,,,,

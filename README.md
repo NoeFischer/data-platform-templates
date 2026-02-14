@@ -30,11 +30,18 @@ Data consultants and platform teams who repeatedly build data platforms and want
 │   ├── training-plan.md             # Plan skill-building for platform users
 │   └── adoption-tracker.csv         # Measure adoption over time (spreadsheet)
 │
-└── 04-data-platform-specific/   # Data platform essentials
-    ├── architecture-decision-record.md  # Document key technical decisions (ADR)
-    ├── data-governance-checklist.md     # Ownership, quality, security, lineage
-    ├── migration-runbook.md             # Step-by-step migration playbook
-    └── platform-design-brief.md        # One-pager to align on platform vision
+├── 04-data-platform-specific/   # Data platform essentials
+│   ├── architecture-decision-record.md  # Document key technical decisions (ADR)
+│   ├── data-governance-checklist.md     # Ownership, quality, security, lineage
+│   ├── migration-runbook.md             # Step-by-step migration playbook
+│   └── platform-design-brief.md        # One-pager to align on platform vision
+│
+└── 05-focus-and-scope-control/  # Keep the project on track
+    ├── scope-change-request.md      # Force a cost/benefit analysis before adding scope
+    ├── scope-change-tracker.csv     # At-a-glance log of all scope changes (spreadsheet)
+    ├── priorities-alignment-canvas.md   # Get stakeholders to agree on what matters most
+    ├── weekly-focus-check.md        # 15-minute weekly exercise to catch drift early
+    └── decision-log.csv             # Record decisions so they don't get revisited (spreadsheet)
 ```
 
 ## How to use these templates
@@ -49,16 +56,27 @@ Data consultants and platform teams who repeatedly build data platforms and want
 
 | Phase | Key templates |
 |-------|--------------|
-| **Discovery / Scoping** | Project charter, Platform design brief, Stakeholder analysis |
+| **Discovery / Scoping** | Project charter, Platform design brief, Stakeholder analysis, **Priorities alignment canvas** |
 | **Planning** | Roadmap, RACI, Requirements, Risk register, Communication plan |
-| **Build** | User stories, Backlog prioritization, ADRs, Status reports |
+| **Build** | User stories, Backlog prioritization, ADRs, Status reports, **Weekly focus check** |
 | **Migration / Rollout** | Migration runbook, Impact assessment, Training plan, Milestone tracker |
 | **Adoption / Steady state** | Adoption tracker, Data governance checklist |
+| **Ongoing (all phases)** | **Decision log, Scope change request, Scope change tracker** |
 
 ## Format choices
 
 - **Markdown** (`.md`) — for narrative documents, checklists, and anything that benefits from prose and structure. Works well in Git, wikis, and Notion.
 - **CSV** (`.csv`) — for tabular data like registers, trackers, and matrices. Opens directly in spreadsheet tools where filtering and sorting are useful.
+
+## Keeping the project on track
+
+Projects derail gradually, not suddenly. The `05-focus-and-scope-control/` folder exists specifically to fight the three most common failure modes:
+
+1. **Scope creep** — The scope change request forces a cost/benefit analysis. The key question: "if we do this, what do we *not* do?" If nobody can answer that, the request shouldn't be approved.
+2. **Priority misalignment** — Stakeholders often think they agree on priorities but actually don't. The priorities alignment canvas makes this visible early, before it causes months of building the wrong thing.
+3. **Gradual drift** — The weekly focus check is a 15-minute habit that catches drift before it compounds. If you keep rolling the same priorities forward week after week, something structural is broken.
+
+The decision log is the glue. Decisions made verbally in meetings get forgotten or relitigated. Write them down. When someone asks "why did we do X?", point them to the log instead of reopening the debate.
 
 ## Tips from experience
 
@@ -66,3 +84,5 @@ Data consultants and platform teams who repeatedly build data platforms and want
 - **RACI confusion** causes more delays than technical problems. Fill it in early, review it with stakeholders, and update it when roles shift.
 - **Change management is not optional.** The best-architected platform fails if people don't use it. Budget real time for communication, training, and feedback loops.
 - **ADRs compound in value.** Six months in, nobody remembers why you picked Snowflake over Databricks. Write it down when the decision is fresh.
+- **"Not now" is more useful than "no."** Most scope change requests aren't bad ideas — they're just badly timed. Defer them explicitly so they don't sneak back in.
+- **Run the weekly focus check even when things feel fine.** Especially when things feel fine. That's when drift is hardest to notice.
