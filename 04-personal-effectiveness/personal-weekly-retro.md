@@ -7,6 +7,18 @@
 **Week of:** _______________
 **Engagement:** _______________
 
+## Am I working on what matters?
+
+_Before reflecting on the week, check for drift. These three questions catch the slow slide into busywork._
+
+| Question | Answer |
+|----------|--------|
+| Can I name the top 3 priorities for the project right now? | |
+| Did I spend most of my time on those priorities this week? | Yes / No — what pulled me away? |
+| Did any "just a quick thing" quietly eat hours? | No / Yes — what was it? |
+
+_If you answered "no" to the second question two weeks in a row, something structural is wrong. Raise it._
+
 ## What went well this week?
 
 _Name 1-3 specific things, not vague feelings. "I pushed back on the scope change and the client agreed to defer" is better than "good week."_

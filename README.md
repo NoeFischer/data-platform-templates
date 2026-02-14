@@ -1,124 +1,98 @@
 # Data Platform Templates
 
-A collection of ready-to-use templates for data platform projects, focused on the areas that are hardest to get right: **project management**, **product management**, and **change management**.
+A curated set of templates for data platform consulting. Organized around how you actually work: joining a project, making decisions, delivering, and getting better over time.
 
 ## Who is this for?
 
-Data consultants and platform teams who repeatedly build data platforms and want to stop reinventing the wheel on the management and governance side.
+A consultant or engineer who joins data platform projects — often mid-flight, often not as the lead — and wants a small set of tools that work even if nobody else on the team uses them.
+
+## What's in here (and what's not)
+
+20 templates in 4 folders. That's it. No status report templates (that's the PM's job), no backlog CSVs (that's what Jira is for), no communication plans (that's a change management lead's deliverable). Everything here is something you can use yourself, regardless of your role on the project.
 
 ## Repository structure
 
 ```
 .
-├── 01-project-management/       # Run the project
-│   ├── project-charter.md           # Define scope, goals, and constraints upfront
-│   ├── raci-matrix.csv              # Clarify who does what (spreadsheet)
-│   ├── status-report.md             # Weekly/biweekly stakeholder update
-│   ├── risk-register.csv            # Track risks, owners, and mitigations (spreadsheet)
-│   └── milestone-tracker.csv        # High-level timeline with deliverables (spreadsheet)
+├── 01-joining-and-alignment/       # When you arrive
+│   ├── engagement-kickoff-checklist.md  # First 2 weeks: what to do, who to meet, what to ask
+│   ├── situation-assessment.md          # Your "fresh eyes" findings after week 1-2
+│   ├── stakeholder-map.csv             # Who matters, what they care about, how to engage them
+│   └── priorities-alignment-canvas.md  # Force stakeholders to agree on what matters most
 │
-├── 02-product-management/       # Shape what gets built
-│   ├── platform-roadmap.md          # Phased delivery plan with outcomes
-│   ├── requirements-template.md     # Capture functional & non-functional requirements
-│   ├── backlog-prioritization.csv   # Score and rank work items (spreadsheet)
-│   └── user-story-template.md       # Consistent story format for platform features
+├── 02-decisions/                    # When you decide
+│   ├── architecture-decision-record.md  # Document the "why" behind key technical choices
+│   ├── decision-log.csv                 # Every decision, written down so it doesn't get relitigated
+│   ├── complexity-check.md              # 10-minute gut check: am I making this too complicated?
+│   ├── solution-design-one-pager.md     # Describe the boring version first, then justify additions
+│   ├── build-vs-buy.md                  # Default answer is "buy" — make the case otherwise
+│   └── technology-selection-scorecard.csv  # Weighted scoring biased toward simplicity
 │
-├── 03-change-management/        # Help people adopt the platform
-│   ├── stakeholder-analysis.csv     # Map influence, interest, and engagement (spreadsheet)
-│   ├── impact-assessment.md         # Assess change impact on teams and processes
-│   ├── communication-plan.csv       # Who gets told what, when, and how (spreadsheet)
-│   ├── training-plan.md             # Plan skill-building for platform users
-│   └── adoption-tracker.csv         # Measure adoption over time (spreadsheet)
+├── 03-delivery/                     # When you build
+│   ├── project-charter.md              # Scope, goals, constraints — or a diagnostic if one doesn't exist
+│   ├── raci-matrix.csv                 # Who does what (open in a spreadsheet)
+│   ├── risk-register.csv               # Track risks before they become problems (spreadsheet)
+│   ├── scope-change-request.md         # Force a cost/benefit analysis before adding scope
+│   ├── migration-runbook.md            # Step-by-step migration playbook
+│   └── data-governance-checklist.md    # Ownership, quality, security, lineage
 │
-├── 04-data-platform-specific/   # Data platform essentials
-│   ├── architecture-decision-record.md  # Document key technical decisions (ADR)
-│   ├── data-governance-checklist.md     # Ownership, quality, security, lineage
-│   ├── migration-runbook.md             # Step-by-step migration playbook
-│   └── platform-design-brief.md        # One-pager to align on platform vision
-│
-├── 05-focus-and-scope-control/  # Keep the project on track
-│   ├── scope-change-request.md      # Force a cost/benefit analysis before adding scope
-│   ├── scope-change-tracker.csv     # At-a-glance log of all scope changes (spreadsheet)
-│   ├── priorities-alignment-canvas.md   # Get stakeholders to agree on what matters most
-│   ├── weekly-focus-check.md        # 15-minute weekly exercise to catch drift early
-│   └── decision-log.csv             # Record decisions so they don't get revisited (spreadsheet)
-│
-├── 06-technical-decisions/      # Fight over-engineering
-│   ├── complexity-check.md          # 10-minute checklist: am I making this too complicated?
-│   ├── technology-selection-scorecard.csv  # Weighted scoring biased toward simplicity (spreadsheet)
-│   ├── build-vs-buy.md              # Structured analysis — default answer is "buy"
-│   └── solution-design-one-pager.md # Describe the simplest version first, then justify additions
-│
-└── 07-consultant-playbook/      # Personal tools for working better
-    ├── engagement-kickoff-checklist.md  # Everything to do in the first 2 weeks of a new gig
+└── 04-personal-effectiveness/       # Your private toolkit
     ├── meeting-prep.md                  # 5-minute prep before any meeting that matters
-    ├── personal-weekly-retro.md         # Friday reflection on how you worked, not just what
+    ├── personal-weekly-retro.md         # Friday reflection: how you worked, not just what
     ├── lessons-learned-log.csv          # Cross-engagement pattern library (spreadsheet)
-    └── engagement-close-out.md          # End well: handover, relationships, personal learning
+    └── engagement-close-out.md          # End well: handover, relationships, learning
 ```
 
-## How to use these templates
+## How to use these
 
-1. **Start a new engagement** — Run through `07-consultant-playbook/engagement-kickoff-checklist.md`, then copy the project folders (01-06) into your project workspace.
-2. **Fill in the charter first** — `01-project-management/project-charter.md` sets the foundation. Do this before anything else.
-3. **Pick what you need** — Not every project needs every template. A small project might only need the charter, RACI, and a roadmap. A large enterprise migration might use all of them.
-4. **CSV files open in any spreadsheet tool** — The `.csv` files are designed to be opened in Excel, Google Sheets, or Numbers. They include headers and example rows you can delete.
-5. **Keep 07-consultant-playbook for yourself** — These are your personal tools. The lessons learned log and weekly retro stay with you across engagements, not with any single project.
-6. **Adapt freely** — These are starting points, not rigid forms. Add columns, remove sections, rename things.
+1. **When you start a new engagement** — Work through `01-joining-and-alignment/engagement-kickoff-checklist.md`. It's written for the common case: you're joining a project already in motion.
+2. **After your first 1-2 weeks** — Write your `situation-assessment.md`. Share it with your sponsor. This is the highest-value thing you can produce early.
+3. **Pick what you need from 02 and 03** — Not every engagement needs every template. A short engagement might only need ADRs and the decision log. A large migration might use everything in `03-delivery/`.
+4. **04-personal-effectiveness stays with you** — These tools follow you across engagements. The lessons learned log and weekly retro are career assets, not project artifacts.
+5. **CSV files open in any spreadsheet tool** — The `.csv` files are designed for Excel, Google Sheets, or Numbers. They include example rows you can delete.
+6. **Adapt freely** — These are starting points, not rigid forms.
 
-## Suggested workflow by project phase
+## The three tiers of use
 
-| Phase | Key templates |
-|-------|--------------|
-| **Discovery / Scoping** | Project charter, Platform design brief, Stakeholder analysis, **Priorities alignment canvas** |
-| **Planning** | Roadmap, RACI, Requirements, Risk register, Communication plan, **Technology selection scorecard** |
-| **Design** | **Solution design one-pager, Complexity check, Build vs. buy**, ADRs |
-| **Build** | User stories, Backlog prioritization, Status reports, **Weekly focus check** |
-| **Migration / Rollout** | Migration runbook, Impact assessment, Training plan, Milestone tracker |
-| **Adoption / Steady state** | Adoption tracker, Data governance checklist |
-| **Ongoing (all phases)** | **Decision log, Scope change request, Scope change tracker** |
+You don't need to be the project lead to get value from these. Think of them in tiers:
 
-## Format choices
+| Tier | How you use it | Templates |
+|------|---------------|-----------|
+| **Use privately** | Nobody needs to know | Stakeholder map, decision log, weekly retro, lessons log, meeting prep, complexity check, situation assessment |
+| **Suggest when you see a gap** | "I noticed we don't have this — want me to set it up?" | ADRs, risk register, scope change process |
+| **Propose if you're leading** | Requires buy-in from the team | Project charter, RACI, priorities alignment canvas |
 
-- **Markdown** (`.md`) — for narrative documents, checklists, and anything that benefits from prose and structure. Works well in Git, wikis, and Notion.
-- **CSV** (`.csv`) — for tabular data like registers, trackers, and matrices. Opens directly in spreadsheet tools where filtering and sorting are useful.
+The private tier is where most of the value is. The best consultants aren't the ones who introduce new processes — they're the ones who understand the project better than anyone because they wrote things down.
 
-## Keeping the project on track
+## What was cut (and why)
 
-Projects derail gradually, not suddenly. The `05-focus-and-scope-control/` folder exists specifically to fight the three most common failure modes:
+This repo used to have 30 templates in 7 folders. Here's what got removed and the reasoning:
 
-1. **Scope creep** — The scope change request forces a cost/benefit analysis. The key question: "if we do this, what do we *not* do?" If nobody can answer that, the request shouldn't be approved.
-2. **Priority misalignment** — Stakeholders often think they agree on priorities but actually don't. The priorities alignment canvas makes this visible early, before it causes months of building the wrong thing.
-3. **Gradual drift** — The weekly focus check is a 15-minute habit that catches drift before it compounds. If you keep rolling the same priorities forward week after week, something structural is broken.
+- **Status reports, milestone trackers** — PM artifacts. If you need them, your PM tool has them.
+- **Roadmaps, backlog prioritization, user stories** — Product management artifacts that live in the team's ticketing system. A CSV backlog alongside Jira is a recipe for drift.
+- **Impact assessments, communication plans, training plans, adoption trackers** — Change management deliverables. If you're hired to do change management, build these from scratch for the specific context. Generic templates for these do more harm than good.
+- **Platform design brief** — Overlapped with the solution design one-pager, which is better.
+- **Scope change tracker** — The decision log already captures this.
+- **Weekly focus check** — Folded into the personal weekly retro (the "Am I working on what matters?" section).
 
-The decision log is the glue. Decisions made verbally in meetings get forgotten or relitigated. Write them down. When someone asks "why did we do X?", point them to the log instead of reopening the debate.
+The principle: if a template requires a specific role to be useful, or if it duplicates something that lives in a better tool, cut it.
 
-## Fighting over-engineering
+## The decision tools
 
-The `06-technical-decisions/` folder exists because the most expensive mistakes in data platforms aren't picking the wrong tool — they're building too much. These templates are intentionally biased toward simplicity:
+The `02-decisions/` folder is intentionally biased toward simplicity. These templates exist because the most expensive mistakes in data platforms aren't picking the wrong tool — they're building too much.
 
-- **Complexity check** — 10 red-flag questions to ask yourself before committing to any approach. Includes a "what if I just..." exercise that forces you to consider the boring solution before the clever one.
-- **Technology selection scorecard** — Weighted scoring where "time to value" and "simplicity of operation" have the highest weights, and "scalability" is deliberately low. Adjustable, but you have to justify changing the weights.
-- **Build vs. buy** — The default answer is "buy." You have to make a strong, specific case to justify building. Includes the hidden costs people always forget (maintenance, documentation, onboarding new people).
-- **Solution design one-pager** — Starts with "describe the dumbest possible version" (v0). You can only add complexity by showing a concrete scenario where v0 fails. Has a "what I'm deliberately not doing" section — the most important part for someone who tends to over-engineer.
-
-## Your consultant playbook
-
-The `07-consultant-playbook/` folder is different from the rest. Folders 01-06 are project artifacts you share with clients and teams. Folder 07 is for you — personal tools that make you better at your job over time.
-
-- **Engagement kickoff checklist** — The first 2 weeks of an engagement set the tone for everything that follows. This covers the obvious (access requests, recurring meetings) and the less obvious (find the unofficial influencers, identify your first quick win, don't start solutioning in week 1).
-- **Meeting prep** — 5 minutes before the meeting: what's the purpose, what do I want to walk out with, what might go sideways? 5 minutes after: what was decided, what did I learn? The "after" section is where the real value is.
-- **Personal weekly retro** — Not about the project, about you. Where did you overcomplicate things? Where did you spend time on things that didn't matter? Tracks energy levels too — burnout is an occupational hazard in consulting.
-- **Lessons learned log** — A CSV that follows you across engagements. The "Times Seen" column is the key: when you've seen the same pattern 3 times, it's not bad luck — it's something you need a rule for. The example entries are drawn from common data platform consulting pitfalls.
-- **Engagement close-out** — How to leave well. Knowledge transfer, relationship maintenance, personal reflection. Includes a reminder to set a 3-month follow-up — the cheapest business development you'll ever do.
+- **Complexity check** — 10 red-flag questions before committing to any approach. Includes the "what if I just..." exercise: describe the boring solution before the clever one.
+- **Solution design one-pager** — Starts with "describe the dumbest possible version" (v0). You can only add complexity by showing a concrete scenario where v0 fails.
+- **Build vs. buy** — The default answer is "buy." You have to make a strong, specific case to justify building. Includes the hidden costs everyone forgets.
+- **Technology selection scorecard** — Weighted scoring where "time to value" and "simplicity of operation" are weighted highest, "scalability" is deliberately low.
 
 ## Tips from experience
 
-- The **project charter** is the single most valuable document. If the client won't align on scope and success criteria upfront, everything downstream suffers.
-- **RACI confusion** causes more delays than technical problems. Fill it in early, review it with stakeholders, and update it when roles shift.
-- **Change management is not optional.** The best-architected platform fails if people don't use it. Budget real time for communication, training, and feedback loops.
+- The **project charter** is the most valuable document — even when one already exists. Read it. If it doesn't match reality, that's your first finding.
+- **RACI confusion** causes more delays than technical problems. If decisions are stalling, the RACI is wrong (or missing).
 - **ADRs compound in value.** Six months in, nobody remembers why you picked Snowflake over Databricks. Write it down when the decision is fresh.
-- **"Not now" is more useful than "no."** Most scope change requests aren't bad ideas — they're just badly timed. Defer them explicitly so they don't sneak back in.
-- **Run the weekly focus check even when things feel fine.** Especially when things feel fine. That's when drift is hardest to notice.
-- **Always describe the boring solution first.** If you can't explain what's wrong with the simple version, you don't need the complex one. The solution design one-pager enforces this.
+- **"Not now" is more useful than "no."** Most scope requests aren't bad ideas — they're badly timed. Defer explicitly.
+- **Always describe the boring solution first.** If you can't explain what's wrong with the simple version, you don't need the complex one.
 - **"We might need it later" is not a reason to build it now.** Write down the trigger condition that would justify it, and revisit when that trigger actually fires.
+- **Your personal weekly retro is the highest-ROI habit in this entire repo.** 15 minutes on Friday. Non-negotiable. It's how you get better over time instead of just getting busier.
+- **The situation assessment is your first deliverable.** It earns trust, demonstrates judgment, and forces you to synthesize everything you've learned. Don't skip it.

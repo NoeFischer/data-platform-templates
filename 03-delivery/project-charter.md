@@ -1,6 +1,10 @@
 # Project Charter: [Project Name]
 
-> Fill in all sections before kickoff. This is the single source of truth for scope, goals, and constraints. Review with the sponsor and key stakeholders before proceeding.
+> The single source of truth for scope, goals, and constraints.
+>
+> **If you're leading:** Fill this in before kickoff. Get sponsor sign-off before proceeding.
+>
+> **If you're joining mid-project:** Use this as a diagnostic. Does a charter exist? If so, is it still accurate? If not, the project is running without a shared definition of success — that's your first finding. Either way, the questions below are the ones you need answers to.
 
 ## 1. Project overview
 
@@ -22,7 +26,7 @@ _Why is this project happening? What business problem or opportunity is driving 
 
 ## 3. Objectives and success criteria
 
-_What does "done" look like? Be specific and measurable._
+_What does "done" look like? Be specific and measurable. If nobody can answer this clearly, the project is in trouble._
 
 | Objective | Success metric | Target |
 |-----------|---------------|--------|
@@ -76,18 +80,7 @@ _Be explicit. This prevents scope creep more than anything else._
 | Migration | | Data migration, validation, cutover |
 | Adoption | | Training, documentation, handover |
 
-## 7. Budget and resources
-
-| Category | Estimate | Notes |
-|----------|----------|-------|
-| Consulting / delivery team | | |
-| Platform licenses | | |
-| Infrastructure / cloud | | |
-| Training | | |
-| Contingency | | |
-| **Total** | | |
-
-## 8. Risks and dependencies
+## 7. Risks and dependencies
 
 _Top risks identified at charter stage. Maintain the full list in the risk register._
 
@@ -99,7 +92,7 @@ _Top risks identified at charter stage. Maintain the full list in the risk regis
 |-----------|-------|--------|
 | | | |
 
-## 9. Governance
+## 8. Governance
 
 | Ceremony | Frequency | Attendees | Purpose |
 |----------|-----------|-----------|---------|
@@ -107,10 +100,10 @@ _Top risks identified at charter stage. Maintain the full list in the risk regis
 | Sprint review | Every 2 weeks | Delivery team, PO | Demo progress |
 | Status report | Weekly | All stakeholders | Written update |
 
-## 10. Approvals
+## 9. Approvals
 
-| Name | Role | Signature / Approval | Date |
-|------|------|---------------------|------|
+| Name | Role | Approval | Date |
+|------|------|----------|------|
 | | Sponsor | | |
 | | Project lead | | |
 | | Technical lead | | |

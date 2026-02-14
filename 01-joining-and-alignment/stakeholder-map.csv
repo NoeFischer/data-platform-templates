@@ -1,0 +1,9 @@
+Name,Role,Influence (H/M/L),Interest (H/M/L),Current Attitude,What They Care About,Key Concern,How to Engage Them,Notes
+Example: CFO,Chief Financial Officer,H,M,Neutral,ROI and cost control,Cost overruns with unclear business case,Monthly steering updates with cost/benefit data,Budget approval authority — needs to see value in dollars
+Example: Analytics Lead,Head of Analytics,M,H,Supportive,Data access and self-service,Losing control of existing reports; learning curve,Involve in design decisions; make them a champion,Already enthusiastic — invest in this relationship
+Example: Sales Ops Manager,Sales Operations Manager,L,H,Resistant,Minimal disruption to their workflow,Extra work and change to familiar tools,1:1 demo showing how their specific workflow improves,Key user group — their resistance blocks adoption
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Attitude options:,"Champion, Supportive, Neutral, Resistant, Hostile",,,,,,,
+How to use:,"Fill this in during your first week, even if just for yourself. Update as you learn more. The most valuable column is 'Key Concern' — address these proactively and you neutralize resistance before it becomes a problem. You don't need permission to maintain this privately.",,,,,,,

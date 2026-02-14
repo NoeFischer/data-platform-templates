@@ -1,9 +1,0 @@
-Stakeholder Name,Role / Title,Department,Influence (H/M/L),Interest (H/M/L),Current Attitude,Desired Attitude,Engagement Strategy,Key Concerns,Communication Preference,Champion Potential,Notes
-Example: CFO,Chief Financial Officer,Finance,H,M,Neutral,Supportive,Monthly steering committee updates; show ROI impact,"Cost overruns, unclear business case",Email summary + steering deck,Low,Budget approval authority
-Example: Analytics Lead,Head of Analytics,BI Team,M,H,Supportive,Champion,"Involve in design decisions; make them a platform champion","Losing control of existing reports, learning curve",Slack + working sessions,High,Already enthusiastic — nurture this
-Example: Sales Ops Manager,Sales Operations Manager,Sales,L,H,Resistant,Neutral,"1:1 demo of how their workflow improves; address concerns directly","Extra work, change to familiar tools",In-person / video,Medium,Key user group — resistance here blocks adoption
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-Attitude options:,Champion / Supportive / Neutral / Resistant / Hostile,,,,,,,,,,
-Engagement approaches:,"Inform, Consult, Involve, Collaborate, Empower",,,,,,,,,,
