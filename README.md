@@ -36,12 +36,18 @@ Data consultants and platform teams who repeatedly build data platforms and want
 │   ├── migration-runbook.md             # Step-by-step migration playbook
 │   └── platform-design-brief.md        # One-pager to align on platform vision
 │
-└── 05-focus-and-scope-control/  # Keep the project on track
-    ├── scope-change-request.md      # Force a cost/benefit analysis before adding scope
-    ├── scope-change-tracker.csv     # At-a-glance log of all scope changes (spreadsheet)
-    ├── priorities-alignment-canvas.md   # Get stakeholders to agree on what matters most
-    ├── weekly-focus-check.md        # 15-minute weekly exercise to catch drift early
-    └── decision-log.csv             # Record decisions so they don't get revisited (spreadsheet)
+├── 05-focus-and-scope-control/  # Keep the project on track
+│   ├── scope-change-request.md      # Force a cost/benefit analysis before adding scope
+│   ├── scope-change-tracker.csv     # At-a-glance log of all scope changes (spreadsheet)
+│   ├── priorities-alignment-canvas.md   # Get stakeholders to agree on what matters most
+│   ├── weekly-focus-check.md        # 15-minute weekly exercise to catch drift early
+│   └── decision-log.csv             # Record decisions so they don't get revisited (spreadsheet)
+│
+└── 06-technical-decisions/      # Fight over-engineering
+    ├── complexity-check.md          # 10-minute checklist: am I making this too complicated?
+    ├── technology-selection-scorecard.csv  # Weighted scoring biased toward simplicity (spreadsheet)
+    ├── build-vs-buy.md              # Structured analysis — default answer is "buy"
+    └── solution-design-one-pager.md # Describe the simplest version first, then justify additions
 ```
 
 ## How to use these templates
@@ -57,8 +63,9 @@ Data consultants and platform teams who repeatedly build data platforms and want
 | Phase | Key templates |
 |-------|--------------|
 | **Discovery / Scoping** | Project charter, Platform design brief, Stakeholder analysis, **Priorities alignment canvas** |
-| **Planning** | Roadmap, RACI, Requirements, Risk register, Communication plan |
-| **Build** | User stories, Backlog prioritization, ADRs, Status reports, **Weekly focus check** |
+| **Planning** | Roadmap, RACI, Requirements, Risk register, Communication plan, **Technology selection scorecard** |
+| **Design** | **Solution design one-pager, Complexity check, Build vs. buy**, ADRs |
+| **Build** | User stories, Backlog prioritization, Status reports, **Weekly focus check** |
 | **Migration / Rollout** | Migration runbook, Impact assessment, Training plan, Milestone tracker |
 | **Adoption / Steady state** | Adoption tracker, Data governance checklist |
 | **Ongoing (all phases)** | **Decision log, Scope change request, Scope change tracker** |
@@ -78,6 +85,15 @@ Projects derail gradually, not suddenly. The `05-focus-and-scope-control/` folde
 
 The decision log is the glue. Decisions made verbally in meetings get forgotten or relitigated. Write them down. When someone asks "why did we do X?", point them to the log instead of reopening the debate.
 
+## Fighting over-engineering
+
+The `06-technical-decisions/` folder exists because the most expensive mistakes in data platforms aren't picking the wrong tool — they're building too much. These templates are intentionally biased toward simplicity:
+
+- **Complexity check** — 10 red-flag questions to ask yourself before committing to any approach. Includes a "what if I just..." exercise that forces you to consider the boring solution before the clever one.
+- **Technology selection scorecard** — Weighted scoring where "time to value" and "simplicity of operation" have the highest weights, and "scalability" is deliberately low. Adjustable, but you have to justify changing the weights.
+- **Build vs. buy** — The default answer is "buy." You have to make a strong, specific case to justify building. Includes the hidden costs people always forget (maintenance, documentation, onboarding new people).
+- **Solution design one-pager** — Starts with "describe the dumbest possible version" (v0). You can only add complexity by showing a concrete scenario where v0 fails. Has a "what I'm deliberately not doing" section — the most important part for someone who tends to over-engineer.
+
 ## Tips from experience
 
 - The **project charter** is the single most valuable document. If the client won't align on scope and success criteria upfront, everything downstream suffers.
@@ -86,3 +102,5 @@ The decision log is the glue. Decisions made verbally in meetings get forgotten 
 - **ADRs compound in value.** Six months in, nobody remembers why you picked Snowflake over Databricks. Write it down when the decision is fresh.
 - **"Not now" is more useful than "no."** Most scope change requests aren't bad ideas — they're just badly timed. Defer them explicitly so they don't sneak back in.
 - **Run the weekly focus check even when things feel fine.** Especially when things feel fine. That's when drift is hardest to notice.
+- **Always describe the boring solution first.** If you can't explain what's wrong with the simple version, you don't need the complex one. The solution design one-pager enforces this.
+- **"We might need it later" is not a reason to build it now.** Write down the trigger condition that would justify it, and revisit when that trigger actually fires.

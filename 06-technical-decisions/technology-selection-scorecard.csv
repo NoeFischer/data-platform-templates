@@ -1,0 +1,24 @@
+Criterion,Weight (1-5),Option A: ___,Score A,Option B: ___,Score B,Option C: ___,Score C,Scoring guidance
+Time to value,5,,,,,,,"How fast can we deliver something useful? (5 = days/weeks, 1 = months)"
+Simplicity of operation,5,,,,,,,"How easy is it to run day-to-day? (5 = managed/serverless, 1 = dedicated ops team needed)"
+Team knows it already,4,,,,,,,"Can the team use it today without significant upskilling? (5 = yes, 1 = months of learning)"
+Fits current needs (not future),4,,,,,,,"Does it solve the problem we have now? (5 = perfect fit, 1 = overkill for current needs)"
+Total cost of ownership (3yr),3,,,,,,,"All-in cost: licenses + infra + people to operate (5 = cheap, 1 = expensive)"
+Community / ecosystem,3,,,,,,,"Docs, community, integrations, hiring pool (5 = thriving, 1 = niche)"
+Managed service available,3,,,,,,,"Can someone else run this for us? (5 = fully managed, 1 = self-host only)"
+Migration path out,2,,,,,,,"Can we leave if it's wrong? (5 = easy to migrate away, 1 = deep lock-in)"
+Scales to 10x current needs,2,,,,,,,"Not 100x. Just 10x. (5 = easily, 1 = major rearchitecture)"
+Client / org already uses it,2,,,,,,,"Is it already in the org? Reduces procurement and security friction (5 = yes, 1 = new vendor)"
+Weighted total,-,,,,,,,"=SUM(Weight × Score) for each option"
+,,,,,,,,
+HOW TO USE:,,,,,,,,
+"1. Fill in the option names across the top",,,,,,,,
+"2. Score each option 1-5 per criterion",,,,,,,,
+"3. Multiply each score by the weight and sum for the weighted total",,,,,,,,
+"4. The highest score wins — but check your gut. If the winner feels wrong, examine why.",,,,,,,,
+,,,,,,,,
+WHY THESE WEIGHTS:,,,,,,,,
+"Time to value and simplicity of operation are weighted highest (5) because these are where over-engineering hits hardest.",,,,,,,,
+"Team familiarity is weighted 4 because adopting a new tool has a hidden cost that's almost always underestimated.",,,,,,,,
+"Scalability is weighted only 2 — intentionally. Most data platforms don't need to handle Google scale, and designing for it too early is a common trap.",,,,,,,,
+"Adjust weights if your context is genuinely different, but be honest about whether you're adjusting because the context requires it or because you want to justify the fancier option.",,,,,,,,
