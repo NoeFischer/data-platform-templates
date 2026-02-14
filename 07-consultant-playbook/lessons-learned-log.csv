@@ -1,0 +1,9 @@
+Lesson ID,Date,Engagement / Context,Category,Pattern Observed,What Went Wrong (or Right),Root Cause,What I'd Do Differently,Applies To,Times Seen
+L-001,,Example engagement,Scoping,"Client said 'just a few data sources' — turned out to be 15 with undocumented dependencies","Scoped for 5 sources, actually needed 15. Timeline blew out by 6 weeks.","Trusted the client's estimate without verifying. Didn't ask to see the source systems before committing.","Always do a source system inventory in discovery — count them myself, don't take the client's word for it.",Scoping / Discovery,3
+L-002,,Example engagement,Stakeholders,"The real decision-maker wasn't in the room","Designed the architecture, got sign-off, then the CTO (who wasn't involved) rejected it.",Didn't map the actual decision-making chain. Assumed the people in meetings had authority.,"Ask early: 'Who else needs to approve this?' and 'Has this kind of decision been overturned before?'",Stakeholder management,2
+L-003,,Example engagement,Over-engineering,"Built a generic ingestion framework for 3 sources","Spent 2 weeks on a reusable framework when copy-paste-modify would have taken 3 days.",Wanted to build it 'properly.' The client didn't need generic — they needed done.,"Use the complexity check. 3 sources don't justify a framework. 15 might.",Technical decisions,4
+L-004,,,,,,,,,
+L-005,,,,,,,,,
+L-006,,,,,,,,,
+Categories:,"Scoping, Stakeholders, Over-engineering, Change management, Communication, Technical, Process, Personal effectiveness",,,,,,,,
+How to use:,"Add entries after each engagement retro or when a pattern clicks. The 'Times Seen' column is the most important — when it hits 3+, it's a systemic pattern, not bad luck. Build a personal rule around it.",,,,,,,,

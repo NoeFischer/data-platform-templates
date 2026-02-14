@@ -43,20 +43,28 @@ Data consultants and platform teams who repeatedly build data platforms and want
 │   ├── weekly-focus-check.md        # 15-minute weekly exercise to catch drift early
 │   └── decision-log.csv             # Record decisions so they don't get revisited (spreadsheet)
 │
-└── 06-technical-decisions/      # Fight over-engineering
-    ├── complexity-check.md          # 10-minute checklist: am I making this too complicated?
-    ├── technology-selection-scorecard.csv  # Weighted scoring biased toward simplicity (spreadsheet)
-    ├── build-vs-buy.md              # Structured analysis — default answer is "buy"
-    └── solution-design-one-pager.md # Describe the simplest version first, then justify additions
+├── 06-technical-decisions/      # Fight over-engineering
+│   ├── complexity-check.md          # 10-minute checklist: am I making this too complicated?
+│   ├── technology-selection-scorecard.csv  # Weighted scoring biased toward simplicity (spreadsheet)
+│   ├── build-vs-buy.md              # Structured analysis — default answer is "buy"
+│   └── solution-design-one-pager.md # Describe the simplest version first, then justify additions
+│
+└── 07-consultant-playbook/      # Personal tools for working better
+    ├── engagement-kickoff-checklist.md  # Everything to do in the first 2 weeks of a new gig
+    ├── meeting-prep.md                  # 5-minute prep before any meeting that matters
+    ├── personal-weekly-retro.md         # Friday reflection on how you worked, not just what
+    ├── lessons-learned-log.csv          # Cross-engagement pattern library (spreadsheet)
+    └── engagement-close-out.md          # End well: handover, relationships, personal learning
 ```
 
 ## How to use these templates
 
-1. **Start a new engagement** — Copy the repo or the folders you need into your project workspace.
+1. **Start a new engagement** — Run through `07-consultant-playbook/engagement-kickoff-checklist.md`, then copy the project folders (01-06) into your project workspace.
 2. **Fill in the charter first** — `01-project-management/project-charter.md` sets the foundation. Do this before anything else.
 3. **Pick what you need** — Not every project needs every template. A small project might only need the charter, RACI, and a roadmap. A large enterprise migration might use all of them.
 4. **CSV files open in any spreadsheet tool** — The `.csv` files are designed to be opened in Excel, Google Sheets, or Numbers. They include headers and example rows you can delete.
-5. **Adapt freely** — These are starting points, not rigid forms. Add columns, remove sections, rename things.
+5. **Keep 07-consultant-playbook for yourself** — These are your personal tools. The lessons learned log and weekly retro stay with you across engagements, not with any single project.
+6. **Adapt freely** — These are starting points, not rigid forms. Add columns, remove sections, rename things.
 
 ## Suggested workflow by project phase
 
@@ -93,6 +101,16 @@ The `06-technical-decisions/` folder exists because the most expensive mistakes 
 - **Technology selection scorecard** — Weighted scoring where "time to value" and "simplicity of operation" have the highest weights, and "scalability" is deliberately low. Adjustable, but you have to justify changing the weights.
 - **Build vs. buy** — The default answer is "buy." You have to make a strong, specific case to justify building. Includes the hidden costs people always forget (maintenance, documentation, onboarding new people).
 - **Solution design one-pager** — Starts with "describe the dumbest possible version" (v0). You can only add complexity by showing a concrete scenario where v0 fails. Has a "what I'm deliberately not doing" section — the most important part for someone who tends to over-engineer.
+
+## Your consultant playbook
+
+The `07-consultant-playbook/` folder is different from the rest. Folders 01-06 are project artifacts you share with clients and teams. Folder 07 is for you — personal tools that make you better at your job over time.
+
+- **Engagement kickoff checklist** — The first 2 weeks of an engagement set the tone for everything that follows. This covers the obvious (access requests, recurring meetings) and the less obvious (find the unofficial influencers, identify your first quick win, don't start solutioning in week 1).
+- **Meeting prep** — 5 minutes before the meeting: what's the purpose, what do I want to walk out with, what might go sideways? 5 minutes after: what was decided, what did I learn? The "after" section is where the real value is.
+- **Personal weekly retro** — Not about the project, about you. Where did you overcomplicate things? Where did you spend time on things that didn't matter? Tracks energy levels too — burnout is an occupational hazard in consulting.
+- **Lessons learned log** — A CSV that follows you across engagements. The "Times Seen" column is the key: when you've seen the same pattern 3 times, it's not bad luck — it's something you need a rule for. The example entries are drawn from common data platform consulting pitfalls.
+- **Engagement close-out** — How to leave well. Knowledge transfer, relationship maintenance, personal reflection. Includes a reminder to set a 3-month follow-up — the cheapest business development you'll ever do.
 
 ## Tips from experience
 
