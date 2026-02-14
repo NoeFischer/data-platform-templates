@@ -8,7 +8,7 @@ A consultant or engineer who joins data platform projects — often mid-flight, 
 
 ## What's in here (and what's not)
 
-20 templates in 4 folders. That's it. No status report templates (that's the PM's job), no backlog CSVs (that's what Jira is for), no communication plans (that's a change management lead's deliverable). Everything here is something you can use yourself, regardless of your role on the project.
+21 templates in 4 folders. That's it. No status report templates (that's the PM's job), no backlog CSVs (that's what Jira is for), no communication plans (that's a change management lead's deliverable). Everything here is something you can use yourself, regardless of your role on the project.
 
 ## Repository structure
 
@@ -37,6 +37,7 @@ A consultant or engineer who joins data platform projects — often mid-flight, 
 │   └── data-governance-checklist.md    # Ownership, quality, security, lineage
 │
 └── 04-personal-effectiveness/       # Your private toolkit
+    ├── where-to-focus.md                # Monday thinking tool: where does my time create the most impact?
     ├── meeting-prep.md                  # 5-minute prep before any meeting that matters
     ├── personal-weekly-retro.md         # Friday reflection: how you worked, not just what
     ├── lessons-learned-log.csv          # Cross-engagement pattern library (spreadsheet)
@@ -58,7 +59,7 @@ You don't need to be the project lead to get value from these. Think of them in 
 
 | Tier | How you use it | Templates |
 |------|---------------|-----------|
-| **Use privately** | Nobody needs to know | Stakeholder map, decision log, weekly retro, lessons log, meeting prep, complexity check, situation assessment |
+| **Use privately** | Nobody needs to know | Stakeholder map, decision log, weekly retro, where to focus, lessons log, meeting prep, complexity check, situation assessment |
 | **Suggest when you see a gap** | "I noticed we don't have this — want me to set it up?" | ADRs, risk register, scope change process |
 | **Propose if you're leading** | Requires buy-in from the team | Project charter, RACI, priorities alignment canvas |
 
@@ -95,4 +96,5 @@ The `02-decisions/` folder is intentionally biased toward simplicity. These temp
 - **Always describe the boring solution first.** If you can't explain what's wrong with the simple version, you don't need the complex one.
 - **"We might need it later" is not a reason to build it now.** Write down the trigger condition that would justify it, and revisit when that trigger actually fires.
 - **Your personal weekly retro is the highest-ROI habit in this entire repo.** 15 minutes on Friday. Non-negotiable. It's how you get better over time instead of just getting busier.
+- **Monday: where to focus. Friday: how did I do.** These two bookend your week. The focus tool points you forward, the retro looks back. Together they create a feedback loop that compounds.
 - **The situation assessment is your first deliverable.** It earns trust, demonstrates judgment, and forces you to synthesize everything you've learned. Don't skip it.
